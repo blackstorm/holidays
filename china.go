@@ -58,8 +58,12 @@ func GetNowYearChinaHolidays(loc *time.Location) map[string]Holiday {
 
 func TodayIsChinaHoliday(loc *time.Location) bool {
 	now := time.Now().In(loc)
-	date := now.Format("2006-01-02")
-	holidays := GetNowYearChinaHolidays(loc)
+	return IsChinaHoliday(now)
+}
+
+func IsChinaHoliday(time time.Time) bool {
+	date := time.Format("2006-01-02")
+	holidays := GetNowYearChinaHolidays(time.Location())
 	_, ok := holidays[date]
 	return ok
 }
