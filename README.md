@@ -4,13 +4,13 @@ The lib provide few methods to get holidays for a given country and year.
 
 Only support China holidays now.
 
-## Useage
+## Usage
 
-```
+```shell
 go get -u github.com/blackstorm/holidays
 ```
 
-```
+```golang
 import "github.com/blackstorm/holidays"
 
 holidays.IsChinaHoliday(time.Now())
