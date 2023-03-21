@@ -6,11 +6,11 @@ Only support China holidays now.
 
 ## Usage
 
-```
+```shell
 go get -u github.com/blackstorm/holidays
 ```
 
-```
+```golang
 import "github.com/blackstorm/holidays"
 
 holidays.IsChinaHoliday(time.Now())
