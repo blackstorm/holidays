@@ -62,8 +62,7 @@ func TodayIsChinaHoliday(loc *time.Location) bool {
 }
 
 func IsChinaHoliday(time time.Time) bool {
-	date := time.Format("2006-01-02")
-	holidays := GetNowYearChinaHolidays(time.Location())
-	_, ok := holidays[date]
+	holidays := GetChinaHolidays(time.Year())
+	_, ok := holidays[time.Format("2006-01-02")]
 	return ok
 }
