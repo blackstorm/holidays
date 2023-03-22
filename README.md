@@ -1,8 +1,6 @@
 # Hlidays
 
-The lib provide few methods to get holidays for a given country and year.
-
-Only support China holidays now.
+The lib provide few methods to get china holidays.
 
 ## Usage
 
