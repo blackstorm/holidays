@@ -1,4 +1,4 @@
-# Hlidays
+# Holidays
 
 The lib provide few methods to get china holidays.
 
