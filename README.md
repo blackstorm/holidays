@@ -21,3 +21,7 @@ holidays.IsChinaHoliday(now)
 
 ## Holiday data
 The China holiday data from https://github.com/NateScarlet/holiday-cn
+
+## China Holiday API
+
+https://jiejiariapi.com
